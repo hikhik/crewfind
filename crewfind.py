@@ -1,10 +1,13 @@
 # Import the LaunchDarkly SDK
 import ldclient
+from ldclient.config import Config
 import os
 from flask import Flask, render_template, session, request
 
+
 # Load the LaunchDarkly SDK Key
-ldclient.set_sdk_key('sdk-381ef9b4-0a3d-456c-9fca-786f789c04a4')
+# ldclient.set_sdk_key('sdk-381ef9b4-0a3d-456c-9fca-786f789c04a4')
+ldclient.set_config(Config("sdk-381ef9b4-0a3d-456c-9fca-786f789c04a4"))
 
 # Intialise a LaunchDarkly client
 ld_client = ldclient.get()
