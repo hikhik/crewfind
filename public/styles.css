@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0.5em;
+  margin: 0;
+  background: white;
+}
+
+h1 h2 h3 {
+  align-self: end;
+}
+
+.intro {
+  background: #000;
+  padding: 10px;
+  color: #fff;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.selling {
+  background: #ddd;
+  width: 100%;
+}
+
+.contentrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}

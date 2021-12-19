@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Crew Find</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/public/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="intro">
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr><td><h1>Welcome to CrewFind</h1></td>
+          <td align="right"><a href="/logout">Logout</a></td></tr>
+      </table>
+    </div>
+
+    <div class="contentrow">
+      <div class="column left">
+        <h2>Skippers</h2>
+        Search for members to join your crew.
+
+        <form>
+          <table cellpadding="5" cellspacing="0">
+            <tr>
+              <td align="right">Yacht</td>
+              <td><input type="text" name="boat" /></td>
+            </tr>
+            <tr>
+              <td align="right">Skipper</td>
+              <td><input type="text" name="skipper" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="right">
+                <input type="submit" name="submit" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+      <div class="column right">
+        <h2>Crew</h2>
+        Search for yachts seeking crew members.
+
+        <form>
+          <table cellpadding="5" cellspacing="0">
+            <tr>
+              <td align="right">Yacht length</td>
+              <td>
+                <input type="radio" name="length" value="1" /><label for="1"
+                  >up to 10m</label
+                ><br />
+                <input type="radio" name="length" value="2" /><label for="2"
+                  >10m - 15m</label
+                ><br />
+                <input type="radio" name="length" value="3" /><label for="3"
+                  >15m +</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td align="right">Crew attitude</td>
+              <td>
+                <input type="radio" name="attitude" value="1" /><label for="1"
+                  >Competitive</label
+                ><br />
+                <input type="radio" name="attitude" value="2" /><label for="2"
+                  >Relaxed</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="right">
+                <input type="submit" name="submit" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    {% if selling_enabled == True %}
+    <div class="column selling">
+      <h2>Sell your yacht</h2>
+      Advertise your yacht for sale.
+      <form>
+        <table cellpadding="5" cellspacing="0" width="100%">
+          <tr>
+            <td align="right">Name</td>
+            <td><input type="text" name="yachtname" /></td>
+            <td align="right">Price</td>
+            <td><input type="text" name="yachtprice" /></td>
+          </tr>
+          <tr>
+            <td align="right">Make</td>
+            <td><input type="text" name="yachtmake" /></td>
+            <td align="right">Model</td>
+            <td><input type="text" name="yachtmodel" /></td>
+          </tr>
+          <tr>
+            <td colspan="4" align="right">
+              <input type="submit" name="submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    {% endif %}
+  </body>
+</html>

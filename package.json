@@ -1,0 +1,13 @@
+{
+  "name": "crewfind",
+  "version": "0.0.1",
+  "description": "Find crew members for your sailing yacht",
+  "author": "Hilton Rosenfeld",
+  "scripts": {
+    "start": "pip3 install -r requirements && python3 server.py",
+    "restart": "npm start"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
