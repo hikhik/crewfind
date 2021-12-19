@@ -4,7 +4,7 @@
   "description": "Find crew members for your sailing yacht",
   "author": "Hilton Rosenfeld",
   "scripts": {
-    "start": "pip3 install -r requirements && python3 server.py",
+    "start": "pip3 install -r requirements && python3 crewfind.py",
     "restart": "npm start"
   },
   "engines": {
