@@ -6,8 +6,7 @@ from flask import Flask, render_template, session, request
 
 
 # Load the LaunchDarkly SDK Key
-ldclient.set_sdk_key('sdk-381ef9b4-0a3d-456c-9fca-786f789c04a4')
-# ldclient.set_config(Config("<SDK_KEY>"))
+ldclient.set_config(Config("<SDK_KEY>"))
 
 # Intialise a LaunchDarkly client
 ld_client = ldclient.get()
